@@ -16,6 +16,7 @@ function generateNewNumber() {
   const newNumber = numbers[newIndex];
   if (newNumber === undefined) {
     container.innerHTML = "<h1>HAS ACABADO EL MASTER DE JAVASCRIPT</h1>";
+    return
   }
   // Borramos ese número del array numbers
   numbers.splice(newIndex, 1);
